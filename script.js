@@ -1,6 +1,11 @@
 var txt = document.getElementById("inputEmail3"); //hidden original text
 var showInput = document.getElementById("showInput"); //converted text
 
+document.getElementById("reset").addEventListener('click', () => {
+    document.getElementById("keys").value = "";
+    document.getElementById("values").value = "";
+});
+
 txt.addEventListener("input", (e) => {
     // console.log(e.target.value);
     // showInput.value = e.target.value;
