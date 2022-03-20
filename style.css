@@ -1,0 +1,66 @@
+body {
+    background-color: #00BCD4;
+}
+
+td {
+    padding: 30px;
+}
+
+#tabular-virtual-keyboard {
+    min-width: 640px;
+    box-shadow: 0 3px 6px rgba(51, 51, 51, 0.16);
+    display: table;
+    padding: 0;
+    margin: 0 auto;
+    width: auto;
+    color: #f1f1f1;
+    background-color: #b7472a;
+    border: 2px solid #b7472a;
+    background: linear-gradient(to top, #b7472a 20px, #923922 56px);
+    background: -webkit-linear-gradient(bottom, #b7472a 56px, #923922 20px);
+    text-align: center;
+}
+
+#tabular-virtual-keyboard>.virtual-keyboard-row {
+    display: table-row;
+    text-align: center;
+}
+
+#tabular-virtual-keyboard>.virtual-keyboard-row>.virtual-keyboard-column {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.virtual-keyboard-button {
+    box-shadow: 0 2px 3px rgba(51, 51, 51, 0.3);
+    border: 2px solid #923922;
+    font-size: 18px;
+    color: #f1f1f1;
+    background-color: #b7472a;
+    background: linear-gradient(to top, #923922 20px, #b7472a 20px);
+    background: -webkit-linear-gradient(bottom, #923922 20px, #b7472a 20px);
+    cursor: pointer;
+    padding: 0;
+    display: inline-block;
+    margin: 4px;
+    outline: 0;
+    text-decoration: none;
+    border-radius: 4px;
+    width: 48px;
+    height: 48px;
+    text-shadow: -1px 1px 1px #333;
+    transition: all 0.1s ease-out;
+}
+
+.virtual-keyboard-button:hover {
+    border: 2px solid #f1f1f1;
+    box-shadow: 0px 0px 10px rgba(241, 241, 241, 0.3);
+}
+
+.virtual-keyboard-button:active,
+.virtual-keyboard-button:focus {
+    background: #f1f1f1;
+    color: #666;
+    box-shadow: 0px 0px 10px rgba(241, 241, 241, 0.3);
+    text-shadow: 1px 0px 0px #333;
+}
